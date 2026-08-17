@@ -1,251 +1,415 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Natália Maria Alves — Portfólio</title>
-  
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
-  
-  <link rel="stylesheet" href="style.css">
-  <script src="script.js" defer></script>
-</head>
-<body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Natália Maria Alves — Portfólio</title>
 
-<header>
-  <nav>
-    <div class="brand">Natália <span>Alves</span></div>
-    <button class="nav-toggle mono" id="navToggle" aria-label="abrir menu">≡</button>
-    <ul class="navlinks" id="navLinks">
-      <li><a href="#sobre">Sobre Mim</a></li>
-      <li><a href="#trajetoria">Trajetória</a></li>
-      <li><a href="#habilidades">Habilidades</a></li>
-      <li><a href="#projetos">Projetos</a></li>
-      <li><a href="#contato">Contato</a></li>
-    </ul>
-  </nav>
-</header>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
 
-<main>
-  <section class="hero wrap" id="topo">
-    
-    <div class="hero-content">
-      <div class="hero-eyebrow mono">planta geral — esc. 1:200</div>
-      <h1>Natália<br>Maria Alves</h1>
-      <p class="hero-line">Sou técnica em processos e metrologia, e agora retomo meus traços na Arquitetura. <em>Uma trajetória que venho redesenhando</em> entre a precisão dos milímetros e a escala dos edifícios.</p>
-      <div class="hero-meta">
-        <span>São José dos Campos — SP</span>
-        <span>Arquitetura e Urbanismo — UNIP</span>
-        <span>Disponível para novos desafios ✨</span>
-      </div>
-    </div>
+    <link rel="stylesheet" href="style.css" />
+    <script src="script.js" defer></script>
+  </head>
+  <body>
+    <div id="globalGlow"></div>
 
-    <div class="hero-graphic fade-up">
-      <div class="grid-pattern"></div>
-      <div class="arch"></div>
-    </div>
+    <header>
+      <nav>
+        <div class="brand">Natália <span>Alves</span></div>
 
-  </section>
+        <div class="nav-right">
+          <ul class="navlinks" id="navLinks">
+            <li>
+              <a
+                href="#sobre"
+                data-pt="Sobre Mim"
+                data-en="About Me"
+                data-es="Sobre Mí"
+                >Sobre Mim</a
+              >
+            </li>
+            <li>
+              <a
+                href="#trajetoria"
+                data-pt="Trajetória"
+                data-en="Experience"
+                data-es="Trayectoria"
+                >Trajetória</a
+              >
+            </li>
+            <li>
+              <a
+                href="#habilidades"
+                data-pt="Habilidades"
+                data-en="Skills"
+                data-es="Habilidades"
+                >Habilidades</a
+              >
+            </li>
+            <li>
+              <a
+                href="#projetos"
+                data-pt="Projetos"
+                data-en="Projects"
+                data-es="Proyectos"
+                >Projetos</a
+              >
+            </li>
+            <li>
+              <a
+                href="#contato"
+                data-pt="Contato"
+                data-en="Contact"
+                data-es="Contacto"
+                >Contato</a
+              >
+            </li>
+          </ul>
 
-  <div class="ruler"><div class="ruler-track"></div></div>
+          <div class="lang-dropdown">
+            <button
+              id="langToggleBtn"
+              class="lang-toggle mono"
+              title="Mudar Idioma"
+            >
+              PT 🇧🇷
+            </button>
+            <div class="lang-menu" id="langMenu">
+              <button class="lang-option" data-lang="PT">PT 🇧🇷</button>
+              <button class="lang-option" data-lang="EN">EN 🇺🇸</button>
+              <button class="lang-option" data-lang="ES">ES 🇪🇸</button>
+            </div>
+          </div>
 
-  <section class="wrap" id="sobre">
-    <div class="scale-tag">corte — esc. 1:100</div>
-    <h2>Quem é a Natália</h2>
-    <div class="sobre-grid fade-up">
-      <div class="monogram">NA</div>
-      <div class="sobre-text">
-        <p>Oi! Construí minha trajetória profissional entre números, processos e peças medidas na casa do milímetro — e agora estou escrevendo meu próximo capítulo dentro da arquitetura e do urbanismo.</p>
-        <p>Formada em <strong>Administração</strong> pelo Senac, atuo como Jovem Aprendiz no setor de Compras da <strong>Aptiv Brazil</strong>, onde tenho contato com fornecedores do mundo todo. Em paralelo, curso <strong>Mecatrônica</strong> no SENAI, o que me deu uma visão absurdamente técnica sobre leitura de projetos, usinagem e desenho técnico.</p>
-        <p>Retornei recentemente aos meus estudos em <strong>Arquitetura e Urbanismo</strong> na UNIP. Trago para a prancheta uma bagagem pouco comum: a exatidão de quem entende de metrologia industrial e a organização de quem lida com prazos e contratos corporativos todos os dias.</p>
-      </div>
-    </div>
-  </section>
-
-  <div class="ruler"><div class="ruler-track"></div></div>
-
-  <section class="wrap" id="trajetoria">
-    <div class="scale-tag">detalhe — esc. 1:50</div>
-    <h2>Por onde andei</h2>
-    <div class="timeline fade-up">
-
-      <div class="tl-item">
-        <div class="tl-date mono">Jan 2023 — Abr 2024</div>
-        <div class="tl-node"><div class="tl-dot filled"></div><div class="tl-stem"></div></div>
-        <div class="tl-body">
-          <h3>Técnico em Administração</h3>
-          <div class="tl-org">Senac São José dos Campos</div>
-          <p class="tl-desc">Formação de base em processos administrativos e organização — o alicerce de tudo que construí depois.</p>
-          <span class="badge">Concluído</span>
+          <button
+            class="nav-toggle mono"
+            id="navToggle"
+            aria-label="abrir menu"
+          >
+            ≡
+          </button>
         </div>
-      </div>
+      </nav>
+    </header>
 
-      <div class="tl-item">
-        <div class="tl-date mono">Jan 2025 — Atual</div>
-        <div class="tl-node"><div class="tl-dot filled"></div><div class="tl-stem"></div></div>
-        <div class="tl-body">
-          <h3>Jovem Aprendiz — Setor de Compras</h3>
-          <div class="tl-org">Aptiv Brazil LTDA</div>
-          <p class="tl-desc">Lido diariamente com contratos, cotações, flutuação de dólar/euro e negociação ativa com fornecedores nacionais e internacionais.</p>
-          <span class="badge">Contrato até Dez/2026</span>
+    <main>
+      <section class="hero wrap" id="topo">
+        <div class="hero-content">
+          <div
+            class="hero-eyebrow mono"
+            data-pt="planta geral — esc. 1:200"
+            data-en="general plan — scale 1:200"
+            data-es="plano general — esc. 1:200"
+          >
+            planta geral — esc. 1:200
+          </div>
+          <h1>Natália<br />Maria Alves</h1>
+          <p
+            class="hero-line"
+            data-pt="Sou técnica em processos e metrologia, e agora retomo meus traços na Arquitetura. <em>Uma trajetória que venho redesenhando</em> entre a precisão dos milímetros e a escala dos edifícios."
+            data-en="I am a process and metrology technician, now returning to my lines in Architecture. <em>A trajectory I have been redrawing</em> between the precision of millimeters and the scale of buildings."
+            data-es="Soy técnica en procesos y metrología, y ahora retomo mis trazos en la Arquitectura. <em>Una trayectoria que vengo redibujando</em> entre la precisión de los milímetros y la escala de los edificios."
+          >
+            Sou técnica em processos e metrologia, e agora retomo meus traços na
+            Arquitetura. <em>Uma trajetória que venho redesenhando</em> entre a
+            precisão dos milímetros e a escala dos edifícios.
+          </p>
+
+          <div class="hero-meta">
+            <span>São José dos Campos — SP</span>
+            <span
+              data-pt="Arquitetura e Urbanismo — UNIP"
+              data-en="Architecture and Urbanism — UNIP"
+              data-es="Arquitectura y Urbanismo — UNIP"
+              >Arquitetura e Urbanismo — UNIP</span
+            >
+            <span
+              data-pt="Disponível para novos desafios ✨"
+              data-en="Available for new challenges ✨"
+              data-es="Disponible para nuevos desafíos ✨"
+              >Disponível para novos desafios ✨</span
+            >
+          </div>
         </div>
-      </div>
 
-      <div class="tl-item">
-        <div class="tl-date mono">Cursando — Dez 2026</div>
-        <div class="tl-node"><div class="tl-dot filled"></div><div class="tl-stem"></div></div>
-        <div class="tl-body">
-          <h3>Técnico em Mecatrônica</h3>
-          <div class="tl-org">SENAI — Escola "Santos Dumont"</div>
-          <p class="tl-desc">Usinagem, metrologia e desenvolvimento de desenho técnico no Autodesk Inventor. É aqui que minha noção espacial e de precisão se solidificou.</p>
-          <span class="badge">Em andamento</span>
+        <div class="hero-graphic fade-up">
+          <div class="grid-pattern"></div>
+          <div class="arch"></div>
         </div>
-      </div>
+      </section>
 
-      <div class="tl-item">
-        <div class="tl-date mono">Atualmente</div>
-        <div class="tl-node"><div class="tl-dot"></div></div>
-        <div class="tl-body">
-          <h3>Arquitetura e Urbanismo</h3>
-          <div class="tl-org">UNIP</div>
-          <p class="tl-desc">De volta ao curso após uma pausa, aplicando todo o meu olhar técnico já formado, pronto para ganhar escala urbana.</p>
-          <span class="badge">Próximo capítulo</span>
+      <div class="ruler"><div class="ruler-track"></div></div>
+
+      <section class="wrap" id="sobre">
+        <div
+          class="scale-tag"
+          data-pt="corte — esc. 1:100"
+          data-en="section — scale 1:100"
+          data-es="corte — esc. 1:100"
+        >
+          corte — esc. 1:100
         </div>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="ruler"><div class="ruler-track"></div></div>
-
-  <section class="wrap" id="habilidades">
-    <div class="scale-tag">planta baixa — esc. 1:20</div>
-    <h2>O que eu faço</h2>
-    <div class="skills-grid fade-up">
-
-      <div class="skill-card">
-        <h3>Técnica &amp; Precisão</h3>
-        <ul>
-          <li>Metrologia (Paquímetro, micrômetro)</li>
-          <li>Leitura e desenvolvimento de desenho técnico</li>
-          <li>Autodesk Inventor</li>
-          <li>Processos de usinagem em torno</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <h3>Administração &amp; Processos</h3>
-        <ul>
-          <li>Sistema QAD</li>
-          <li>Gestão e inclusão de contratos</li>
-          <li>Cotações e fornecedores</li>
-          <li>Controle de planilhas de câmbio (USD/EUR)</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <h3>Ferramentas</h3>
-        <ul>
-          <li>Pacote Office Avançado</li>
-          <li>Modelagem e Maquetaria Física</li>
-          <li>Criação de Plantas e Pranchas</li>
-        </ul>
-      </div>
-
-      <div class="skill-card">
-        <h3>Cursos Extras</h3>
-        <ul>
-          <li>Segurança no Trabalho (14h)</li>
-          <li>Ética na Inteligência Artificial (4h)</li>
-          <li>Fundamentos de Segurança Cibernética (4h)</li>
-        </ul>
-      </div>
-
-    </div>
-  </section>
-
-  <div class="ruler"><div class="ruler-track"></div></div>
-
-  <section class="wrap" id="projetos">
-    <div class="scale-tag">prancha — esc. 1:10</div>
-    <h2>O que eu construo</h2>
-    <p class="projetos-intro fade-up">Uma amostra dos trabalhos que desenvolvi unindo minhas habilidades técnicas de precisão metrológica, empatia social e estudo arquitetônico.</p>
-    
-    <div class="projetos-grid fade-up">
-      
-      <div class="plate">
-        <span class="mono">// 001 · ARQUITETURA</span>
-        <div class="plate-center">
-          <strong>Abrigo Essential Homes</strong>
-          Estudo conceitual baseado no protótipo de Norman Foster (2023)[cite: 69, 70, 71]. Pesquisa sobre abrigos modulares pré-fabricados de rápida montagem para comunidades deslocadas, focando no uso de placas de concreto roláveis e materiais sustentáveis que reduzem a pegada de carbono[cite: 75, 77, 79, 81].
+        <h2
+          data-pt="Quem é a Natália"
+          data-en="Who is Natália"
+          data-es="Quién es Natália"
+        >
+          Quem é a Natália
+        </h2>
+        <div class="sobre-grid fade-up">
+          <div class="monogram">NA</div>
+          <div class="sobre-text">
+            <p
+              data-pt="Oi! Construí minha trajetória profissional entre números, processos e peças medidas na casa do milímetro — e agora estou escrevendo meu próximo capítulo dentro da arquitetura e do urbanismo."
+              data-en="Hi! I built my professional path between numbers, processes, and parts measured to the millimeter — and now I am writing my next chapter in architecture and urbanism."
+              data-es="¡Hola! Construí mi trayectoria profesional entre números, procesos y piezas medidas al milímetro — y ahora estoy escribiendo mi próximo capítulo en la arquitectura y el urbanismo."
+            >
+              Oi! Construí minha trajetória profissional entre números,
+              processos e peças medidas na casa do milímetro — e agora estou
+              escrevendo meu próximo capítulo dentro da arquitetura e do
+              urbanismo.
+            </p>
+            <p
+              data-pt="Formada em <strong>Administração</strong> pelo Senac, atuo como Jovem Aprendiz no setor de Compras da <strong>Aptiv Brazil</strong>, onde tenho contato com fornecedores do mundo todo. Em paralelo, curso <strong>Mecatrônica</strong> no SENAI, o que me deu uma visão absurdamente técnica sobre leitura de projetos, usinagem e desenho técnico."
+              data-en="Graduated in <strong>Business Administration</strong>, I work as an Apprentice in the Purchasing sector of <strong>Aptiv Brazil</strong>. In parallel, I study <strong>Mechatronics</strong> at SENAI, giving me a highly technical view on project reading and technical drawing."
+              data-es="Graduada en <strong>Administración</strong>, trabajo como Aprendiz en el sector de Compras de <strong>Aptiv Brazil</strong>. En paralelo, estudio <strong>Mecatrónica</strong> en SENAI, lo que me dio una visión muy técnica sobre la lectura de proyectos y dibujo técnico."
+            >
+              Formada em <strong>Administração</strong> pelo Senac, atuo como
+              Jovem Aprendiz no setor de Compras da
+              <strong>Aptiv Brazil</strong>, onde tenho contato com fornecedores
+              do mundo todo. Em paralelo, curso <strong>Mecatrônica</strong> no
+              SENAI, o que me deu uma visão absurdamente técnica sobre leitura
+              de projetos, usinagem e desenho técnico.
+            </p>
+            <p
+              data-pt="Retornei recentemente aos meus estudos em <strong>Arquitetura e Urbanismo</strong> na UNIP. Trago para a prancheta uma bagagem pouco comum: a exatidão de quem entende de metrologia industrial e a organização de quem lida com prazos e contratos corporativos todos os dias."
+              data-en="I recently returned to my studies in <strong>Architecture and Urbanism</strong> at UNIP. I bring to the drawing board an uncommon background: the precision of industrial metrology and the organization of handling corporate contracts daily."
+              data-es="Regresé recientemente a mis estudios en <strong>Arquitectura y Urbanismo</strong> en la UNIP. Traigo al tablero de dibujo un bagaje poco común: la precisión de la metrología industrial y la organización de gestionar contratos corporativos a diario."
+            >
+              Retornei recentemente aos meus estudos em
+              <strong>Arquitetura e Urbanismo</strong> na UNIP. Trago para a
+              prancheta uma bagagem pouco comum: a exatidão de quem entende de
+              metrologia industrial e a organização de quem lida com prazos e
+              contratos corporativos todos os dias.
+            </p>
+          </div>
         </div>
-        <span class="mono">Sustentabilidade &amp; Modularidade</span>
-      </div>
+      </section>
 
-      <div class="plate">
-        <span class="mono">// 002 · MAQUETARIA</span>
-        <div class="plate-center">
-          <strong>Maquete Volumétrica</strong>
-          Desenvolvimento prático e manual da maquete física do abrigo Essential Homes. O processo envolveu a montagem minuciosa da base e estrutura [cite: 50, 51], pintura do gramado [cite: 49], até a colagem de vegetação e posicionamento do mobiliário e paredes[cite: 52, 53].
-        </div>
-        <span class="mono">Prática · Escala</span>
-      </div>
+      <div class="ruler"><div class="ruler-track"></div></div>
 
-      <div class="plate">
-        <span class="mono">// 003 · EXTENSÃO UNIP</span>
-        <div class="plate-center">
-          <strong>Arte e Empatia no Asilo</strong>
-          Projeto de extensão na Associação Humanitária Amor e Caridade[cite: 65]. Levei arte aos idosos através da montagem de quebra-cabeças de obras clássicas ("O Grito" e "Carnaval em Madureira")[cite: 58, 60, 61, 66]. Uma atividade para exercitar capacidade cognitiva, motora e promover empatia[cite: 67, 68].
+      <section class="wrap" id="projetos">
+        <div
+          class="scale-tag"
+          data-pt="prancha — esc. 1:10"
+          data-en="board — scale 1:10"
+          data-es="lámina — esc. 1:10"
+        >
+          prancha — esc. 1:10
         </div>
-        <span class="mono">Humanização &amp; Sociedade</span>
-      </div>
+        <h2
+          data-pt="O que eu construo"
+          data-en="What I build"
+          data-es="Lo que construyo"
+        >
+          O que eu construo
+        </h2>
+        <p
+          class="projetos-intro fade-up"
+          data-pt="Uma amostra dos trabalhos que desenvolvi unindo minhas habilidades técnicas de precisão metrológica, empatia social e estudo arquitetônico."
+          data-en="A sample of the works I developed combining my technical skills in metrological precision, social empathy, and architectural study."
+          data-es="Una muestra de los trabajos que desarrollé uniendo mis habilidades técnicas de precisión metrológica, empatía social y estudio arquitectónico."
+        >
+          Uma amostra dos trabalhos que desenvolvi unindo minhas habilidades
+          técnicas de precisão metrológica, empatia social e estudo
+          arquitetônico.
+        </p>
 
-      <div class="plate">
-        <span class="mono">// 004 · MECATRÔNICA</span>
-        <div class="plate-center">
-          <strong>Estudo Metrológico</strong>
-          Relatório técnico de Mecatrônica focado na ciência das medições[cite: 2, 6, 16]. Prática laboratorial validando o uso correto de paquímetros, micrômetros e goniômetros para garantir qualidade, confiabilidade e precisão nas medições de peças com geometrias complexas[cite: 24, 27, 29, 32, 35].
-        </div>
-        <span class="mono">Técnica · Milímetros</span>
-      </div>
+        <div class="projetos-grid fade-up">
+          <div class="plate">
+            <span class="mono">// 001 · ARQUITETURA</span>
+            <div class="plate-center">
+              <strong
+                data-pt="Abrigo Essential Homes"
+                data-en="Essential Homes Shelter"
+                data-es="Refugio Essential Homes"
+                >Abrigo Essential Homes</strong
+              >
+              <span
+                data-pt="Estudo conceitual baseado no protótipo de Norman Foster. Pesquisa sobre abrigos modulares pré-fabricados de rápida montagem para comunidades deslocadas."
+                data-en="Conceptual study based on Norman Foster's prototype. Research on prefabricated modular shelters of quick assembly for displaced communities."
+                data-es="Estudio conceptual basado en el prototipo de Norman Foster. Investigación sobre refugios modulares prefabricados de montaje rápido para comunidades desplazadas."
+                >Estudo conceitual baseado no protótipo de Norman Foster.
+                Pesquisa sobre abrigos modulares pré-fabricados de rápida
+                montagem para comunidades deslocadas.</span
+              >
+            </div>
+            <span
+              class="mono"
+              data-pt="Sustentabilidade & Modularidade"
+              data-en="Sustainability & Modularity"
+              data-es="Sostenibilidad y Modularidad"
+              >Sustentabilidade & Modularidade</span
+            >
+          </div>
 
-    </div>
-  </section>
+          <div class="plate">
+            <span class="mono">// 002 · MAQUETARIA</span>
+            <div class="plate-center">
+              <strong
+                data-pt="Maquete Volumétrica"
+                data-en="Volumetric Model"
+                data-es="Maqueta Volumétrica"
+                >Maquete Volumétrica</strong
+              >
+              <span
+                data-pt="Desenvolvimento prático e manual da maquete física do abrigo Essential Homes. O processo envolveu a montagem minuciosa da base e estrutura até a colagem de vegetação."
+                data-en="Practical and manual development of the physical model of the Essential Homes shelter. The process involved meticulous assembly of the base and structure up to the gluing of vegetation."
+                data-es="Desarrollo práctico y manual de la maqueta física del refugio Essential Homes. El proceso involucró el montaje minucioso de la base y estructura hasta el pegado de la vegetación."
+                >Desenvolvimento prático e manual da maquete física do abrigo
+                Essential Homes. O processo envolveu a montagem minuciosa da
+                base e estrutura até a colagem de vegetação.</span
+              >
+            </div>
+            <span
+              class="mono"
+              data-pt="Prática · Escala"
+              data-en="Practice · Scale"
+              data-es="Práctica · Escala"
+              >Prática · Escala</span
+            >
+          </div>
 
-  <div class="ruler"><div class="ruler-track"></div></div>
+          <div class="plate">
+            <span class="mono">// 003 · EXTENSÃO UNIP</span>
+            <div class="plate-center">
+              <strong
+                data-pt="Arte e Empatia no Asilo"
+                data-en="Art and Empathy at the Nursing Home"
+                data-es="Arte y Empatía en el Asilo"
+                >Arte e Empatia no Asilo</strong
+              >
+              <span
+                data-pt="Projeto de extensão na Associação Humanitária Amor e Caridade. Levei arte aos idosos através da montagem de quebra-cabeças de obras clássicas."
+                data-en="Extension project at the Amor e Caridade Humanitarian Association. I brought art to the elderly through the assembly of classic artwork puzzles."
+                data-es="Proyecto de extensión en la Asociación Humanitaria Amor y Caridad. Llevé arte a los ancianos a través del montaje de rompecabezas de obras clásicas."
+                >Projeto de extensão na Associação Humanitária Amor e Caridade.
+                Levei arte aos idosos através da montagem de quebra-cabeças de
+                obras clássicas.</span
+              >
+            </div>
+            <span
+              class="mono"
+              data-pt="Humanização & Sociedade"
+              data-en="Humanization & Society"
+              data-es="Humanización y Sociedad"
+              >Humanização & Sociedade</span
+            >
+          </div>
 
-  <section class="contato" id="contato">
-    <div class="wrap fade-up">
-      <div class="scale-tag" style="color:var(--blueprint-soft)">escala real — esc. 1:1</div>
-      <h2>Vamos conversar?</h2>
-      <p class="contato-line">Estou aberta a oportunidades nas áreas administrativa e técnica — e sempre pronta para um café e uma boa troca de ideias sobre arquitetura.</p>
-      <div class="contato-grid">
-        <div class="contato-item">
-          <span class="mono">Telefone</span>
-          <a href="tel:+5512988874224">(12) 98887-4224</a>
+          <div class="plate">
+            <span class="mono">// 004 · MECATRÔNICA</span>
+            <div class="plate-center">
+              <strong
+                data-pt="Estudo Metrológico"
+                data-en="Metrological Study"
+                data-es="Estudio Metrológico"
+                >Estudo Metrológico</strong
+              >
+              <span
+                data-pt="Relatório técnico de Mecatrônica focado na ciência das medições. Prática laboratorial validando o uso correto de paquímetros e micrômetros."
+                data-en="Mechatronics technical report focused on the science of measurements. Laboratory practice validating the correct use of calipers and micrometers."
+                data-es="Informe técnico de Mecatrónica centrado en la ciencia de las mediciones. Práctica de laboratorio validando el uso correcto de calibradores y micrómetros."
+                >Relatório técnico de Mecatrônica focado na ciência das
+                medições. Prática laboratorial validando o uso correto de
+                paquímetros e micrômetros.</span
+              >
+            </div>
+            <span
+              class="mono"
+              data-pt="Técnica · Milímetros"
+              data-en="Technique · Millimeters"
+              data-es="Técnica · Milímetros"
+              >Técnica · Milímetros</span
+            >
+          </div>
         </div>
-        <div class="contato-item">
-          <span class="mono">E-mail</span>
-          <a href="mailto:nataliadosalves@gmail.com">nataliadosalves@gmail.com</a>
-        </div>
-        <div class="contato-item">
-          <span class="mono">LinkedIn</span>
-          <a href="http://linkedin.com/in/natália-maria-alves" target="_blank" rel="noopener">natália-maria-alves</a>
-        </div>
-        <div class="contato-item">
-          <span class="mono">Local</span>
-          <span class="val">São José dos Campos, SP</span>
-        </div>
-      </div>
-      <footer>
-        <span>Natália Maria Alves © 2026</span>
-        <span>Feito com dedicação e precisão</span>
-      </footer>
-    </div>
-  </section>
-</main>
+      </section>
 
-</body>
+      <div class="ruler"><div class="ruler-track"></div></div>
+
+      <section class="contato" id="contato">
+        <div class="wrap fade-up">
+          <div
+            class="scale-tag"
+            style="color: var(--blueprint-soft)"
+            data-pt="escala real — esc. 1:1"
+            data-en="real scale — 1:1"
+            data-es="escala real — esc. 1:1"
+          >
+            escala real — esc. 1:1
+          </div>
+          <h2
+            data-pt="Vamos conversar?"
+            data-en="Let's talk?"
+            data-es="¿Hablamos?"
+          >
+            Vamos conversar?
+          </h2>
+          <p
+            class="contato-line"
+            data-pt="Estou aberta a oportunidades nas áreas administrativa e técnica — e sempre pronta para um café e uma boa troca de ideias sobre arquitetura."
+            data-en="I am open to opportunities in administrative and technical areas — and always ready for coffee and a good exchange of ideas about architecture."
+            data-es="Estoy abierta a oportunidades en las áreas administrativa y técnica — y siempre lista para un café y un buen intercambio de ideas sobre arquitectura."
+          >
+            Estou aberta a oportunidades nas áreas administrativa e técnica — e
+            sempre pronta para um café e uma boa troca de ideias sobre
+            arquitetura.
+          </p>
+
+          <div class="contato-grid">
+            <div class="contato-item">
+              <span
+                class="mono"
+                data-pt="Telefone"
+                data-en="Phone"
+                data-es="Teléfono"
+                >Telefone</span
+              >
+              <a href="tel:+5512988874224">(12) 98887-4224</a>
+            </div>
+            <div class="contato-item">
+              <span class="mono">E-mail</span>
+              <a href="mailto:nataliadosalves@gmail.com"
+                >nataliadosalves@gmail.com</a
+              >
+            </div>
+            <div class="contato-item">
+              <span class="mono">LinkedIn</span>
+              <a
+                href="http://linkedin.com/in/natália-maria-alves"
+                target="_blank"
+                rel="noopener"
+                >natália-maria-alves</a
+              >
+            </div>
+          </div>
+          <footer>
+            <span>Natália Maria Alves © 2026</span>
+            <span
+              data-pt="Feito com dedicação e precisão"
+              data-en="Made with dedication and precision"
+              data-es="Hecho con dedicación y precisión"
+              >Feito com dedicação e precisão</span
+            >
+          </footer>
+        </div>
+      </section>
+    </main>
+  </body>
 </html>
